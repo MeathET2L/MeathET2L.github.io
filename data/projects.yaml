@@ -1,17 +1,14 @@
-- 
-  name: MakerSquare
-  url: http://themakersquare.com
-  screenshot: makersquare-screenshot.png
+-
+  name: Facebook
+  url: http://facebook.com/MeathET2L
+  screenshot: Facebook-MeathET2L.png
   featured: true
   description: |
-                 MakerSquare is a full-time, ten week program that turns you into a web developer.
-- 
-  name: RailsGirls ATX
-  url: http://railsgirlsatx.org
-  source_link: http://github.com/railsgirlsatx/site
-  screenshot: railsgirls-screenshot.png
+                 Engage with us and the community on our Facebook page.
+-
+  name: Twitter
+  url: http://twitter.com/MeathET2L
+  screenshot: Twitter-MeathET2L.png
   featured: false
   description: |
-                 This is a very long description.
-
-                 It has multiple paragraphs.    
+                 Help us spread the word on Twitter.
