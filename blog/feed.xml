@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2015-12-30T00:00:00Z</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>First Beginnings</title>
+    <link rel="alternate" href="/blog/2015/12/30/first-beginnings.html"/>
+    <id>/blog/2015/12/30/first-beginnings.html</id>
+    <published>2015-12-30T00:00:00Z</published>
+    <updated>2015-12-30T00:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;h1&gt;First Meeting&lt;/h1&gt;
+
+&lt;p&gt;A group of comitted parents and educators are meeting at this very moment in Navan Educate Together National School on Commons Road Navan. </summary>
+    <content type="html">&lt;h1&gt;First Meeting&lt;/h1&gt;
+
+&lt;p&gt;A group of comitted parents and educators are meeting at this very moment in Navan Educate Together National School on Commons Road Navan. &lt;/p&gt;
+
+&lt;h1&gt;Please help&lt;/h1&gt;
+
+&lt;p&gt;Please use our &lt;a href="http://form.jotformeu.com/52912423741350"&gt;Expression of Interest form&lt;/a&gt; to register your interest in sending your own children to Meath based secondary school run according to the Educate Together Ethos.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
