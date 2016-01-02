@@ -48,7 +48,7 @@ Time.zone = "Dublin"
 ## Blog settings
 ###
 
-set :disqus_shortname, "MeathET2L-discussion"
+set :disqus_shortname, "MeathET2L"
 
 activate :blog do |blog|
   blog.prefix = "/blog"

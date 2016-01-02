@@ -6,6 +6,28 @@ pageable: true
   <li class="current"><a href="<%= tag_path tagname %>"><%= tagname %></a></li>
 </ul>
 
+<aside class="small-12 large-3 columns right">
+  <h3>Recent Articles</h3>
+  <ol>
+    <% blog.articles[0...10].each do |article| %>
+      <li><%= link_to article.title, article %> <span> (<%= article.date.strftime('%b %e') %>)</span></li>
+    <% end %>
+  </ol>
+  <h3>Tags</h3>
+  <ol>
+    <% blog.tags.each do |tag, articles| %>
+      <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+    <% end %>
+  </ol>
+
+  <h3>By Year</h3>
+  <ol>
+    <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+      <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
+    <% end %>
+  </ol>
+</aside>
+
 <div class="articles">
   <% page_articles.each_with_index do |article, i| %>
     <% if i > 0 %>
@@ -16,8 +38,8 @@ pageable: true
 </div>
 
 <%= partial '/blog/pagination', :locals => {
-  :paginate => paginate, 
-  :next_page => next_page, 
+  :paginate => paginate,
+  :next_page => next_page,
   :prev_page => prev_page,
   :num_pages => num_pages,
   :page_number => page_number

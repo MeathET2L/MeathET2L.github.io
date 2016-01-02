@@ -7,8 +7,8 @@ tags:
   - meeting
 ---
 
-# First Meeting
-A group of comitted parents and educators are meeting at this very moment in Navan Educate Together National School on Commons Road Navan. READMORE
 
-# Please help
+A group of comitted parents and educators are meeting at [Navan Educate Togehter National School](https://www.facebook.com/Navan-Educate-Together-National-School-301423826612/) on Wednesday, January 13th 2016 at 8pm. Everyone are welcome to come and participate. READMORE
+
+##### Please help
 Please use our [Expression of Interest form](http://form.jotformeu.com/52912423741350) to register your interest in sending your own children to Meath based secondary school run according to the Educate Together Ethos.
