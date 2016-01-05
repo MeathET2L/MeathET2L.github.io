@@ -1,7 +1,7 @@
 ---
 title: tags sidebar added to article views
 date: 2016-01-05 14:06 GMT
-tags: tags, sidebar, articles
+tags: subject, sidebar, articless
 ---
 <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil minima, cumque neque sunt quibusdam assumenda alias quasi recusandae, at iure!</div>
 <div>Soluta laudantium vero voluptates incidunt, doloremque? Minus, voluptas odit, sit eaque explicabo porro pariatur sed, molestias aliquam repellendus asperiores rem.</div>
