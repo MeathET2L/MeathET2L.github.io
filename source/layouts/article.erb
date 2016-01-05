@@ -4,25 +4,5 @@
       <%= partial '/blog/article', :locals => {:article => current_article, :digest => false} %>
     </div>
   </div>
-  <aside class="large-3 columns">
-    <h3>Recent Articles</h3>
-    <panel>
-      <% blog.articles[0...5].each do |article| %>
-        <li><%= link_to article.title, article %> <span> (<%= article.date.strftime('%b %e') %>)</span></li>
-      <% end %>
-    </panel>
-    <h3>Topics</h3>
-    <panel>
-      <% blog.tags.each do |tag, articles| %>
-        <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
-      <% end %>
-    </panel>
-
-    <h3>View All</h3>
-    <panel>
-      <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-        <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
-      <% end %>
-    </panel>
-  </aside>
+  <%= partial '/blog/sidebar'%>
 <% end %>
