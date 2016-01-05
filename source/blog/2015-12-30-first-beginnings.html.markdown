@@ -7,7 +7,6 @@ tags:
   - meeting
 ---
 
-
 A group of comitted parents and educators are meeting at [Navan Educate Togehter National School](https://www.facebook.com/Navan-Educate-Together-National-School-301423826612/) on Wednesday, January 13th 2016 at 8pm. Everyone are welcome to come and participate. READMORE
 
 ##### Please help

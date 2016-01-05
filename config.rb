@@ -48,7 +48,7 @@ Time.zone = 'Dublin'
 ###
 
 configure :development do
-  set :disqus_shortname, 'MeathET2L-development'
+  set :disqus_shortname, 'MeathET2Ldevelopment'
 end
 
 activate :blog do |blog|
