@@ -11,18 +11,18 @@ activate :sprockets
 # way to get sprockets to export the vendored assets within the foundation
 # gem to the build directory because of the non-standard naming of the directories.
 # Keeping this here for reference though.
-#Gem.loaded_specs.values.map(&:full_gem_path).each do |root_path|
+# Gem.loaded_specs.values.map(&:full_gem_path).each do |root_path|
 #  ["js", "scss"].map {|p| File.join(root_path, p) }.select {|p| File.directory?(p) }.each {|p| sprockets.append_path(p)}
-#end
+# end
 
 ###
 ## Site-wide settings
 ####
 
-set :full_name, "Meath Educate Together Secondary Level Campaign"
-set :city, "Meath, Ireland"
+set :full_name, 'Meath Educate Together Secondary Level Campaign'
+set :city, 'Meath, Ireland'
 set :resume, nil # Set to filename of resume PDF in source directory.
-set :google_analytics_tracking_id, "UA-111111111-11"
+set :google_analytics_tracking_id, 'XX-xxxxxxxx-xxYY'
 
 ###
 ## Social network link settings
@@ -33,45 +33,46 @@ set :google_analytics_tracking_id, "UA-111111111-11"
 # This is the id for your profile URL: https://plus.google.com/https://plus.google.com/110506932842622114536/
 set :google_plus_user_id, nil
 # This is your shortname for your profile URL: http://facebook.com/ada.lovelace
-set :facebook_profile_name, "MeathET2L"
-set :twitter_username, "MeathET2L"
+set :facebook_profile_name, 'MeathET2L'
+set :twitter_username, 'MeathET2L'
 # This is your shortname for your profile URL: http://linkedin.com/in/adalovelace
 set :linkedin_profile_name, nil
 set :dribbble_username, nil
-set :github_username, "MeathET2L"
-set :gravatar_email_address, "meath2ndlevel@gmail.com"
+set :github_username, 'MeathET2L'
+set :gravatar_email_address, 'meath2ndlevel@gmail.com'
 
-Time.zone = "Dublin"
-
+Time.zone = 'Dublin'
 
 ###
 ## Blog settings
 ###
 
-set :disqus_shortname, "MeathET2L"
+configure :development do
+  set :disqus_shortname, 'MeathET2L-development'
+end
 
 activate :blog do |blog|
-  blog.prefix = "/blog"
-  blog.permalink = ":year/:month/:day/:title.html"
-  blog.sources = ":year-:month-:day-:title.html"
-  blog.taglink = "tags/:tag.html"
-  blog.layout = "article"
+  blog.prefix = '/blog'
+  blog.permalink = ':year/:month/:day/:title.html'
+  blog.sources = ':year-:month-:day-:title.html'
+  blog.taglink = 'tags/:tag.html'
+  blog.layout = 'article'
   blog.summary_separator = /(READMORE)/
   blog.summary_length = 250
-  blog.year_link = ":year.html"
-  blog.month_link = ":year/:month.html"
-  blog.day_link = ":year/:month/:day.html"
-  blog.default_extension = ".md"
+  blog.year_link = ':year.html'
+  blog.month_link = ':year/:month.html'
+  blog.day_link = ':year/:month/:day.html'
+  blog.default_extension = '.md'
 
-  blog.tag_template = "/blog/tag.html"
-  blog.calendar_template = "/blog/calendar.html"
+  blog.tag_template = '/blog/tag.html'
+  blog.calendar_template = '/blog/calendar.html'
 
   blog.paginate = true
   blog.per_page = 5
-  blog.page_link = "page/:num"
+  blog.page_link = 'page/:num'
 end
 
-page "/blog/feed.xml", :layout => false
+page '/blog/feed.xml', :layout => false
 
 ###
 # Deployment settings
@@ -79,7 +80,7 @@ page "/blog/feed.xml", :layout => false
 
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.branch = "master"
+  deploy.branch = 'master'
 end
 
 ###
@@ -100,20 +101,20 @@ end
 ###
 
 # With no layout
-page "robots.txt", :layout => false
-page "humans.txt", :layout => false
+page 'robots.txt', :layout => false
+page 'humans.txt', :layout => false
 
 # With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
+# page '/path/to/file.html', :layout => :otherlayout
 #
 # A path which all have the same layout
 # with_layout :admin do
-#   page "/admin/*"
+#   page '/admin/*'
 # end
 
 # Proxy (fake) files
-# page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
-#   @which_fake_page = "Rendering a fake page with a variable"
+# page '/this-page-has-no-template.html', :proxy => '/template-file.html' do
+#   @which_fake_page = 'Rendering a fake page with a variable'
 # end
 
 ###
@@ -126,7 +127,7 @@ activate :automatic_image_sizes
 helpers do
   # Generate the markup for a responsive social network link.
   #
-  # network_name    - The String name of the social network, e.g. "Facebook".
+  # network_name    - The String name of the social network, e.g. 'Facebook'.
   # network_setting - The String variable set in this config file for the network,
   #                   e.g. facebook_profile_name.
   # url             - The String URL for the link.
@@ -160,6 +161,7 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+  set :disqus_shortname, 'MeathET2L'
 
   activate :minify_css
   activate :minify_javascript

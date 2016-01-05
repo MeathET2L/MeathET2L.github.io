@@ -3,9 +3,9 @@ require 'sitemap_generator'
 module GoogleSitemapGenerator
   class << self
     def registered(app)
-      app.after_build do |builder|
+      app.after_build do
         app_sitemap = sitemap # avoid name conflict
-        SitemapGenerator::Sitemap.default_host = "http://mattolson.com"
+        SitemapGenerator::Sitemap.default_host = 'http://MeathET2L.github.io'
         SitemapGenerator::Sitemap.create(:public_path => 'build', :verbose => true) do
           app_sitemap.resources.each do |r|
             add(r.url) if r.ext == '.html'
@@ -17,5 +17,4 @@ module GoogleSitemapGenerator
   end
 end
 
-::Middleman::Extensions.register(:sitemap_generator, GoogleSitemapGenerator) 
-
+::Middleman::Extensions.register(:sitemap_generator, GoogleSitemapGenerator)

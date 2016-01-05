@@ -27,12 +27,12 @@ task :setup_github_pages, :repo do |t, args|
     puts "Added remote #{repo_url} as origin"
     system "git config branch.master.remote origin"
     puts "Set origin as default remote"
-    system "git branch -m master source"
+    system 'git branch -m master source'
     puts "Master branch renamed to 'source' for committing your source files"
   end
   url = "http://#{user}.github.io"
 
- 
+
   puts "\n---\n## Now you can deploy to #{url} with `middleman deploy` ##"
 end
 
